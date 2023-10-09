@@ -32,7 +32,7 @@ print(response.status_code)
 
 # Check if the response status code is 200 (OK) before attempting to parse the JSON response
 if response.status_code != 200:
-    print(f"Request failed with status code {response.status_code}")
+    print(f"Request failed with the status code {response.status_code}")
     sys.exit(1)
 
 users_data = response.json()
